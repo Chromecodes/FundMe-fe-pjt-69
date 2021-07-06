@@ -18,8 +18,17 @@ ul, ol, li {
     list-style-type: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 h1, h2, h3,h4, h5, h6 {
     font-weight: 700;
+    color: $grey-4;
+}
+
+input::placeholder, input, p {
+    color: $grey-4;
 }
 
 #main {
@@ -31,7 +40,9 @@ h1, h2, h3,h4, h5, h6 {
     grid-template-columns: .75fr 1fr;
 
     #left {
-        background-color: $primary-color; 
+        background: url('../svg/left-bg.svg');
+        background-repeat: repeat-x;
+        background-color: $primary-color;
         position: relative;
 
         & > ol {
